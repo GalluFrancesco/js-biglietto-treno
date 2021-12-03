@@ -23,4 +23,4 @@ if(age > 65)
 
 //stampo il costo del biglietto
 let htmlElement = document.getElementById('stamp');
-htmlElement.innerHTML= `Il costo del tuo biglietto sarà: ${ticketPrice}`;
+htmlElement.innerHTML= `Il costo del tuo biglietto sarà: ${ticketPrice}€`;
