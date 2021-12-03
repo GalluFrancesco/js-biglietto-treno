@@ -14,12 +14,12 @@ ticketPrice= km * kmPrice;
 //se l'età è <18 calcolo il costo pieno
 //scontato del 20% arrotondato a 2 decimali
 if(age < 18)
-    ticketPrice= ticketPrice*0.8;
+    ticketPrice= Math.round((ticketPrice*0.8)*100)/100;
 
 //se l'età è >=65 clacolo il costo pieno
 //scontato del 40% arrotondato a 2 decimali
 if(age > 65)
-    ticketPrice= ticketPrice*0.6;
+    ticketPrice= Math.round((ticketPrice*0.6)*100)/100;
 
 //stampo il costo del biglietto
 let htmlElement = document.getElementById('stamp');
